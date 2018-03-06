@@ -1,0 +1,173 @@
+/* Lets pick colours! */
+@import url('https://fonts.googleapis.com/css?family=Oswald%7CSyncopate');
+
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --highlight-color: #000;
+  --link-color: blue;
+}
+
+body, html {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+
+  /*Declare your font*/
+  font-family: oswald;
+}
+
+/*choose your type heirarchy*/
+h1,h2,h3,h4 {font-weight: 700;}
+h1 {font-size: 3rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1rem;}
+h4 {font-size: 1rem;}
+
+b {font-weight: 700;}
+i {font-style: italic;}
+a {color: var(--link-color)}
+
+/*basic structure*/
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 50rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.col-1 {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 66%;
+}
+
+.col-2 {
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 33%;
+}
+
+
+/*Header*/
+header {
+  background-image: url("http://www.buzznet.com/wp-content/uploads/sites/12/2017/03/aLIVE-Coverage-for-Insomniac-61.jpg");
+  background-size: 100%;
+  background-position: center;
+  min-height: 300px;
+}
+
+header .container {
+  padding-bottom: 2rem;
+}
+
+header h1, header p {
+  font-family: Syncopate;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+header h1 {
+  margin-bottom: -0.5em;
+  font-size: 5em;
+}
+
+header p {
+  font-size: 2em;
+}
+
+header .text-center {
+  text-align: center;
+}
+
+.navbar ul{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-family: Syncopate;
+  text-transform: uppercase;
+}
+
+.navbar li {
+  background-color: #060606;
+  padding: 0 1em;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.releases {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.releases article {
+  text-align: center;
+  margin: 0 2em;
+}
+
+.releases article {
+  filter: grayscale(1);
+}
+
+.releases article:hover {
+  filter: grayscale(0);
+}
+
+.releases h3 {
+  text-transform: uppercase;
+}
+
+.releases p {
+  font-size: 0.9em;
+}
+
+.section-header h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+/*content*/
+
+.bio {flex-direction: column;}
+.bio p, .bio ul li {margin-bottom: 1rem;}
+
+ul.jobs li {
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+ul.jobs li img {
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin-left: 1.5em;
+}
+
+/*footer*/
+footer .container {
+  padding: 2rem 0;
+  border-top: 2px solid black;
+}
